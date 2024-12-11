@@ -4,7 +4,7 @@ This project utilizes the power of GPT-3.5 to generate concise and informative s
 
 ## Demo
 
-Visit this link for live demo: https://summarizeyoutube.netlify.app/
+Visit this link for live demo: https://summaraii.netlify.app/
 
 ### Video Demo
 
