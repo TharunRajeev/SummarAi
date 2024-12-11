@@ -3,10 +3,24 @@ from openai import OpenAI
 from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound, InvalidVideoId
 from config import API_KEY
 from flask_cors import CORS
+#import boto3
+#import json
+
 
 app = Flask(__name__)
 CORS(app)
 
+# Create Lambda client
+#lambda_client = boto3.client('lambda', region_name='your-region')
+
+#response = lambda_client.invoke(
+#    FunctionName="YOUTUBE_SUMMARIZER",
+#    InvocationType="RequestResponse",
+#    Payload=json.dumps({ "video_id": "w8rYQ40C9xo"})
+#)
+
+# Read the response
+#response_payload = json.load(response['Payload'])
 
 @app.route('/summary', methods=['GET'])
 def youtube_summarizer():
