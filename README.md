@@ -6,10 +6,6 @@ This project utilizes the power of GPT-3.5 to generate concise and informative s
 
 Visit this link for live demo: https://summaraii.netlify.app/
 
-### Video Demo
-
-https://github.com/UmerrAli/YouTube-Summarizer/assets/106273026/170f3bb1-6762-4430-b8c9-8e90f3c7b7fe
-
 ## Frontend
 
 For the frontend of YouTube Video Summarizer, you'll need Node.js and npm (Node Package Manager) which is included with Node.js. Here is how you can install these prerequisites:
@@ -27,7 +23,7 @@ Parcel is used as the bundler for the project.
 
 1. Clone the project:
    ```bash
-   git clone https://github.com/UmerrAli/YouTube-Summarizer
+   git clone https://github.com/TharunRajeev/SummarAi.git
    ```
 2. Install dependencies using npm:
    ```bash
