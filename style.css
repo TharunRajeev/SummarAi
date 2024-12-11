@@ -1,0 +1,272 @@
+:root {
+  --primary: #e74c3c;
+}
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  text-align: left;
+  padding-top: 15px;
+}
+
+header img {
+  max-width: 250px;
+  padding-left: 20px;
+}
+
+/* Heading section */
+.heading {
+  text-align: center;
+  font-size: 1.7em;
+  padding: 30px 0;
+  color: #333;
+}
+
+.heading span:nth-child(2) {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Search field Section */
+.search-container {
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+#search-input {
+  padding: 14px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 25px;
+  border: 2px solid var(--primary);
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#search-input:focus {
+  border-color: #ff8f8f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+/* Buttons Section*/
+.button-container {
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 25px;
+  background-color: var(--primary);
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s, box-shadow 0.4s;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover effects */
+button:hover {
+  background-color: #ffffff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Disabled button */
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #999;
+}
+
+/* Meta data Section*/
+.meta-data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+/* video title and thumbnail*/
+#video-title {
+  margin: 20px 20px 5px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#video-thumbnail {
+  width: 480px;
+  height: 300px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Summary section*/
+.summary {
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  padding: 15px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Summary text */
+.summary-text {
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Spinner section */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.spinner-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* error section*/
+.error {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e74c3c;
+  border-radius: 5px;
+  background-color: #f9d6d5;
+}
+
+/* error text */
+.error-text {
+  color: #e74c3c;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Footer section*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #d8d8d8;
+  text-align: center;
+  padding: 7px 0;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s, transform 0.2s;
+}
+
+footer a:hover {
+  color: var(--primary);
+  transform: scale(1.1);
+}
+
+footer img {
+  vertical-align: middle;
+  height: 20px;
+  margin-right: 5px;
+}
+
+footer span {
+  vertical-align: middle;
+}
+
+/* Responsive CSS within Media Query */
+@media only screen and (max-width: 630px) {
+  header img {
+    max-width: 160px;
+    padding-left: 7px;
+  }
+
+  .heading {
+    font-size: 0.7em;
+  }
+
+  .search-container {
+    margin: 15px auto;
+    max-width: 350px;
+  }
+
+  .search-input {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .button-container {
+    margin-bottom: 30px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  #video-title {
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  #video-thumbnail {
+    width: 370px;
+    height: 225px;
+  }
+
+  .summary {
+    font-size: 12px;
+    margin: 20px 10px 80px 20;
+  }
+
+  .summary-text {
+    font-size: 13px;
+  }
+
+  footer {
+    padding: 5px 0;
+    font-size: 14px;
+  }
+}
